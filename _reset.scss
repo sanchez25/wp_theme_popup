@@ -1,0 +1,45 @@
+:root{
+    --main: #fff;
+    --text: #000;
+    --shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+    --header: linear-gradient(92deg,#1e283f,rgba(20,27,46,.6));
+    --color-primary: #1245ff;
+    --color-secondary: linear-gradient(-45deg, #2EC417 0%, #2EC417 50%, #77d968 100%) right bottom;
+    --border_button: 20px;
+	--link: #2a58ff;
+    --banner: linear-gradient(135deg, #6C8DFF 0%, #1044FF 100%);
+    --btn-content: linear-gradient(-45deg, #1245ff 0%, #1245ff 25%, #6586ff 50%, #1245ff 75%, #1245ff 100%) right bottom;
+    --up-btn: #1044FF;
+    --up-shadow: 0px 24px 32px 0px rgba(18, 69, 255, 0.24), 0px 16px 24px 0px rgba(18, 69, 255, 0.4), 0px 2px 6px 0px rgba(18, 69, 255, 0.28), 0px 0px 1px 0px rgba(0, 0, 0, 0.04);
+    --footer: #1B1C29;
+    --radius-slot: 8px;
+    --overlay: linear-gradient(0deg, #15161f 0%, rgba(20, 23, 34, 0.72) 46.67%, rgba(39, 43, 65, 0) 100%);
+    --demo: #dbdbdb;
+}
+
+* { margin:0; padding:0; box-sizing:border-box;}
+body { overflow-x:hidden; position: relative; background: var(--main); font-family: "Roboto",sans-serif;}
+body.error { background: var(--error); }
+a { text-decoration:none; transition: 0.3s; }
+a:hover {
+    text-decoration: underline;
+}
+input, button { box-shadow:none; font-family: "Roboto", sans-serif;}
+input {outline:none;}
+h1 {color: var(--text);}
+h2, h3, h4, h5, h6 {color: var(--text);}
+p, span, li, a { color: var(--text); }
+button { cursor:pointer; background:transparent; overflow: hidden;}
+img {max-width:100%; display:block; height: auto;}
+
+/* Table content */
+
+.wp-block-table {max-width: 100%;overflow-x:auto;}
+.wp-block-table table {width:100%;  border-collapse: collapse; margin-bottom:20px; overflow: hidden; border-radius: var(--border_button); box-shadow: var(--shadow);}
+.wp-block-table table td { text-align:center; padding:10px; color:var(--text);}
+.wp-block-table table tr:nth-child(2n) {background:var(--banner);}
+.wp-block-table table tr:nth-child(2n) td {color: var(--main);}
+
+a {
+    text-decoration: none;
+}
